@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <title>Pyramids</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto Slab', serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .footer {
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #eee;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            text-align: center;
+            
+        }
+        .line{
+            width: 30%;
+            margin-bottom: 25px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+
+          --text-color: #fff;
+        }
+        .wrapper {
+            display: grid;
+            place-content: center;
+            background-image: linear-gradient(rgba(5, 11, 37, 0.7),rgba(22, 23, 30, 0.7)),url(pyramids.jpg);
+            min-height: 100vh;
+            font-family: "Oswald", sans-serif;
+            font-size: clamp(1.5rem, 1rem + 18vw, 6rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-color);
+        }
+
+        .wrapper > div {
+            grid-area: 1/1/-1/-1;
+        }
+        .top {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+        }
+        .bottom {
+            clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+            color: transparent;
+            background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+            background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            transform: translateX(-0.02em);
+        }
+
+        @media screen and (max-width: 769px) {
+            .wrapper{
+                font-size: clamp(1.5rem, 1rem + 18vw, 85px)
+            }
+        }
+        
+        @media screen and (max-width: 426px) {
+            .wrapper{
+                font-size: clamp(1.5rem, 1rem + 18vw, 50px)
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <section class="wrapper">
+        <div class="top">Pyramids</div>
+        <div class="bottom" aria-hidden="true">Pyramids</div>
+        
+      </section>
+
+   
+      <div class="footer">Made By: Kartik Khatri</div>
+
+
+
+<!------------------------------AI Bot------------------------------>
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Ask any question",
+          "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+          "botId": "99137e28-ca69-43be-ac3a-db762a3178dc",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "99137e28-ca69-43be-ac3a-db762a3178dc",
+          "webhookId": "09b5c2b0-095e-4277-b559-a8f9021cc4e1",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "QuantumMind",
+          "avatarUrl": "https://avatarfiles.alphacoders.com/344/344291.png",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/b4362dde-6055-4725-8127-c161b9ddfa34/v96426/style.css",
+          "frontendVersion": "v1",
+          "useSessionStorage": true,
+          "enableConversationDeletion": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+      });
+    </script>
+     
+     
+
+
+
+
+
+</body>
+</html>
